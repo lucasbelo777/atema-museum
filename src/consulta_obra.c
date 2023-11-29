@@ -19,7 +19,7 @@ int main() {
     Registro registro;
     int id_busca, encontrou = 0, escolha, escolha2;
 
-    arquivo = fopen("dadosobrast.bin", "rb");
+    arquivo = fopen("dadosobras.bin", "rb");
     if (arquivo == NULL) {
         perror("Erro ao abrir o arquivo");
         exit(1);
