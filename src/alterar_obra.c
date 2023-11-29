@@ -102,7 +102,7 @@ int main() {
     FILE *arquivo;
     int id_busca;
 
-    arquivo = fopen("dadosobrast.bin", "rb+");
+    arquivo = fopen("dadosobras.bin", "rb+");
     if (arquivo == NULL) {
         perror("Erro ao abrir o arquivo");
         exit(1);
