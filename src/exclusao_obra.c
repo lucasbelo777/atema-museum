@@ -75,8 +75,8 @@ void excluirObra(int id) {
     fclose(arquivo);
     fclose(tempFile);
 
-    remove("dadosobrast.bin");
-    rename("tempfile.bin", "dadosobrast.bin");
+    remove("dadosobras.bin");
+    rename("tempfile.bin", "dadosobras.bin");
 
     if (encontrou == 0) {
         printf("Nao ha registro com o valor pesquisado.\n");
