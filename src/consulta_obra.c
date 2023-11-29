@@ -25,6 +25,10 @@ int main() {
         exit(1);
     }
 
+    printf("====================\n");
+    printf("    MUSEU ATEMA      \n");
+    printf("====================\n\n");
+    printf("*************************\n");
     printf("Digite o ID para pesquisa: ");
     scanf("%d", &id_busca);
 
@@ -35,7 +39,7 @@ int main() {
             do {
                 system(CLEAR);
 
-                printf("*************************\n");
+
                 printf("Voce esta vendo o Tema: %s\n", registro.tema);
                 printf("Qual obra voce gostaria de ver? (Digite o numero escolhido):\n");
                 printf("*************************\n\n");
@@ -51,12 +55,12 @@ int main() {
                 apresentarObra(registro, escolha);
 
                 // Pergunta se o usuário gostaria de ver mais uma obra
-                printf("\nVoce gostaria de ver mais uma obra? Digite 1 para SIM ou 2 para NAO: ");
+                printf("\nVoce gostaria de ver mais uma obra? Digite 1 para SIM ou 2 para voltar ao Menu Principal: ");
                 scanf("%d", &escolha2);
 
             } while (escolha2 == 1);
 
-            printf("Tchau\n");
+            printf("Voltando ao Menu...\n");
             break; // Adicionado para sair do loop após apresentar as obras
         }
     }
